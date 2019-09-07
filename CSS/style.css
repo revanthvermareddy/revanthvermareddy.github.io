@@ -1,0 +1,104 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#navcontact
+{
+    padding-left: 10px;
+}
+
+#frame 
+{
+   padding: 0;
+   height: 767px;
+   width: 100%;
+}
+
+#card-container
+{
+    transition: box-shadow 83ms;
+    border-radius: 5px;
+    overflow: visible;
+    position: relative;
+}
+
+.card
+{
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    padding: 10px;
+}
+
+#particles-js
+{
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    overflow: hidden;
+    position: absolute;
+}
+
+.smed li i
+{
+    color: #fff;
+    margin: 10px;
+    font-size: 15px;
+}
+
+
+footer
+{
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727;
+    padding: 30px 0px;
+}
+
+
+#footer-main .smed h2
+{
+    font-size: 40px;
+    color: #fff;
+    padding-left: 20px;
+}
+
+#footer-main .smed a i
+{
+    margin: 10px;
+    padding: 10px;
+    font-size: 40px;
+    color: #fff;
+}
+
+#footer-main .smed a i:hover
+{
+    color: #e42448;
+}
+
+#footer-main p a
+{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#footer-main p a:hover
+{
+    color: #00b7ff;
+    text-decoration: none;
+}
+
+#footer-main .ftext
+{
+    margin: 10px;
+    padding:20px;
+    font-size: 15px;
+    color: #fff;
+}

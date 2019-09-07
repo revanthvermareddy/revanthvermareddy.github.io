@@ -4,7 +4,12 @@
   <title>Revanth Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
+  <!-- Custom Fontawesome and Styling Start -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://kit.fontawesome.com/6bcbe86f82.js"></script>
+  <!-- Custom Fontawesome and Styling End -->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -14,19 +19,19 @@
 
 <!-- Header Start -->
 <header>
-  <div class="bg-dark collapse" id="navbarHeader" style="">
+  <div class="bg-dark collapse" id="navbarHeader">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
           <h4 class="text-white">About</h4>
-          <p class="text-muted">I'm a tech geek and love to code. I believe in honesty & hardwork. Passionate to work as a team. Had put a lot of efforts in building my portfolio, would highly appreciate if u encourage me by endorsing the skills mentioned in my linkedin.</p>
+          <p class="text-muted">I'm a tech geek and love to code. I believe in honesty & hard work. Passionate to work as a team. Had put a lot of efforts in building my portfolio, would highly appreciate if u encourage me by endorsing the skills mentioned in my linkedin.</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="https://www.twitter.com/RevanthVerma007" class="text-white">Twitter</a></li>
-            <li><a href="https://www.facebook.com/verma.rev" class="text-white">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/in/vermareddyrevanth" class="text-white">Linkedin</a></li>
+          <h4 class="text-white" id="navcontact">Contact</h4>
+          <ul class="list-unstyled smed">
+            <li><a href="https://www.twitter.com/RevanthVerma007" class="text-white"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/verma.rev" class="text-white"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/vermareddyrevanth" class="text-white"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
           </ul>
         </div>
       </div>
@@ -34,7 +39,7 @@
   </div>
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center">
+      <a href="#" class="navbar-brand d-flex align-items-center" id="mybrand">
         <strong>Revanth Vermareddy</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
@@ -46,24 +51,32 @@
 <!-- Header End -->
 
 <!-- Jumbotron Starts -->
-<div class="jumbotron jumbotron-fluid" style="margin-bottom:0">
-  <div class="container">
-  <div class="card" style="width:300px">
-    <img class="card-img-top" src="Untitled-2.jpg" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Revanth Vermareddy</h4>
-      <p class="card-text">Executive Graduate Trainee at Fidelity Investments</p>
-      <a href="#" class="btn btn-primary">Resume</a>
+<div class="jumbotron jumbotron-fluid" style="margin-bottom:0" id="frame">
+
+  <div  id="particles-js"></div>
+  <script type="text/javascript" src="JS/particles.js"></script>
+  <script type="text/javascript" src="JS/app.js"></script>
+<br>
+  <div class="container" id="card-container">
+    <br>
+    <div class="card" style="width:300px">
+      <img class="card-img-top" src="images/Revanth.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Revanth Vermareddy</h4>
+        <p class="card-text">Executive Graduate Trainee at Fidelity Investments</p>
+        <a href="#" class="btn btn-primary">Resume</a>
+      </div>
     </div>
+    <br>
+    
   </div>
   <br>
   
-  </div>
-  
 </div>
 <!-- Jumbotron Ends -->
-<div class="container">
-<br>
+
+<div class="container" id="details">
+<br><br>
 <h3>Academic Details</h3>
 <div class="table-responsive-sm"> 
 <table class="table">
@@ -137,7 +150,8 @@ To work intensively in a challenging ambience with honesty, sincerity and integr
          - App Development</p>
     </div>
     <div id="ts" class="container tab-pane fade"><br>
-      <h5>Programming Languages</h5>   
+      <h5>Programming Languages</h5>
+ 
       <div class="progress" style="height:20px">
         <div class="progress-bar" style="width:90%;height:20px"><strong>JAVA</strong></div>
       </div>
@@ -215,15 +229,30 @@ To work intensively in a challenging ambience with honesty, sincerity and integr
 </div>
 
 <!-- Footer Start -->
-<footer class="text-muted" style="background: #f2f2f2">
+<footer>
   <br><br>
   <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-    <p>Copyrights owned by Revanth Vermareddy</p>
+
+    <div id="footer-main">
+        <p class="float-right">
+          <a href="#"><i class="fas fa-angle-double-up"></i> up</a>
+        </p>
+
+      <div class="col-md-6 smed">
+        <h2>CONNECT</h2>
+        <a href="https://www.twitter.com/RevanthVerma007" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com/verma.rev" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com/in/vermareddyrevanth" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/revanthvermareddy"><i class="fab fa-github"></i></a>
+      </div>
+      
+      <div class="col-md-6 ftext">
+        <p><i class="far fa-copyright"></i> Copyrights owned by Revanth Vermareddy - 2019</p>
+        <p>connect me on any social-media platform</p>
+      </div>
+    </div>
     
-    <p>visit <a href="https://github.com/revanthvermareddy">github</a> or go back to top for contacting me</p>
+    
   </div>
   <br>
 </footer>
