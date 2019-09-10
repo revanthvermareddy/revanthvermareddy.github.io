@@ -14,6 +14,8 @@ body
    padding: 0;
    height: 767px;
    width: 100%;
+   /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+   background: #f6f6f6;
 }
 
 #card-container
@@ -41,13 +43,13 @@ body
     position: absolute;
 }
 
+
 .smed li i
 {
     color: #fff;
     margin: 10px;
     font-size: 15px;
 }
-
 
 footer
 {
@@ -56,7 +58,7 @@ footer
     width: 100%;
     height: auto;
     margin: auto;
-    background: #272727;
+    background: #272727; 
     padding: 30px 0px;
 }
 
