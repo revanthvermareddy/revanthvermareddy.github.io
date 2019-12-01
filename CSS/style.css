@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body
 {
     margin: 0;
@@ -47,7 +51,7 @@ body
 #up
 {
     color: #fff;
-    background: #ff7500;
+    background: orange;
     display: none;
     position: fixed;
     cursor: pointer;
@@ -71,8 +75,10 @@ body
 }
 
 .progress-bar {
+    background-color: orange;
+    color: white;
     height:20px;
-    padding: 5px 5px 10px 5px;
+    padding: 5px;
 }
 
 .smed li i
