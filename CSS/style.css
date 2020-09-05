@@ -7,6 +7,20 @@ body {
     padding: 0;
 }
 
+button:focus {
+    outline: none; 
+    outline: none;
+}
+
+.h1 {
+    font-size: 2.5rem;
+}
+  
+.h2 {
+    font-size: 2rem;
+}
+
+
 h3 {
     font-size: 2em;
     font-weight: bold;
@@ -232,7 +246,6 @@ hr {
     margin-bottom: 1rem;
     border: 0.5px solid #fff;
     width: 75%;
-
 }
 
 
@@ -267,3 +280,80 @@ a:hover
 }
 
 
+
+.justify-content-center {
+    justify-content: center;
+}
+  
+.align-items-center {
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+
+/* SCROLL-DOWN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.scroll-down {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    transition: all 0.5s;
+    display: block;
+}
+  
+.scroll-down.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+  
+.scroll-down::after {
+    content: "";
+    display: block;
+    margin: 3px auto 0;
+    width: 1px;
+    height: 60px;
+    background: #1a1a1a;
+    transform-origin: bottom;
+    animation: pulse 3.5s infinite linear;
+}
+
+
+/* CREATOR
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.creator {
+    right: 20px;
+    bottom: 20px;
+    
+}
+
+.creator span {
+    color: #e31b23;
+}
+
+.creator a {
+    color: #ffffff;
+    right: 20px;
+}
