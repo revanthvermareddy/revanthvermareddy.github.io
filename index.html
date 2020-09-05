@@ -61,7 +61,7 @@
 <!-- Header End -->
 
 <!-- Jumbotron Starts -->
-<div class="jumbotron jumbotron-fluid" style="margin-bottom:0" id="frame">
+<section class="d-flex jumbotron jumbotron-fluid vh-100" style="margin-bottom:0" id="frame">
 
   <div  id="particles-js"></div>
   <script type="text/javascript" src="JS/particles.js"></script>
@@ -69,14 +69,12 @@
 <br>
   <div class="container" id="card-container">
     <br>
+
     <div class="card" style="width:300px">
-      <!-- 
-        <img class="card-img-top" src="images/Revanth.jpg" alt="Card image" style="width:100%"> 
-        mr-3 mt-3 rounded-circle
-      -->
       <div class="circular-landscape">
         <img class="" src="images/Revanth.jpg" alt="Card image" style="width:100%">
       </div>
+
       <div class="card-body">
         <h4 class="card-title">Revanth Vermareddy</h4>
         <hr>
@@ -89,12 +87,14 @@
   </div>
   <br>
 
-</div>
+  <div class="position-absolute scroll-down">Scroll Down</div>
+</section>
 <!-- Jumbotron Ends -->
 
+<section class="d-flex flex-column justify-content-center align-items-center vh-60 position-relative" id="career-obj">
 <div class="container" id="acad-details">
   <br><br>
-  <h3>Academic Details</h3>
+  <h3>Academic Details 📚</h3>
   <div class="table-responsive-sm"> 
   <table class="table">
       <thead class="thead-dark">
@@ -132,12 +132,13 @@
     </table>
   </div>
 </div>
+</section>
 
-<div id="career-obj">
+<section class="d-flex flex-column justify-content-center align-items-center vh-60 position-relative" id="career-obj">
   <div class="container" style="padding: 50px;">
     <br>
 
-    <h3>Career Objective</h3>
+    <h3>Career Objective 🎯</h3>
     <p>
     Looking for an opportunity to acquire knowledge through the work I do
     and use my skills for both organizational and individual development by
@@ -146,9 +147,9 @@
     </p>
 
   </div>
-</div>
+</section>
 
-<div  id="skills">
+<div id="skills">
 
   <!-- Tab Starts -->
     
@@ -182,7 +183,7 @@
 
       <!-- Start of Technical Skills -->
       <div id="ts" class="container tab-pane fade"><br>
-      <h4>Technical Skills</h4>
+      <h4>Technical Skills 💻</h4>
 
       <div class="row">
         <div class="col-sm-4"><br>
@@ -686,7 +687,7 @@
       <!-- End of Technical Skills -->
 
       <div id="aa" class="container tab-pane fade"><br>
-        <h4>Academic Achievements</h4><br>
+        <h4>Academic Achievements 👨‍🎓</h4><br>
         <p><i class="fas fa-trophy"></i> Secured <strong>AIR 3669</strong> in JEE ADVANCED, 2015 (Top 2.5%)</p>
         <p><i class="fas fa-trophy"></i> Secured <strong>AIR 1949</strong> in JEE MAINS, 2015 among 13 Lakh applicants (Top 0.2%)</p>
         <p><i class="fas fa-trophy"></i> Secured <strong>State 814 Rank</strong> in Telangana State EAMCET, 2015 among 12.5 Lakh applicants (Top 0.5%)</p>
@@ -699,7 +700,6 @@
   <!-- Tab Ends -->
 
 </div>
-
 
 
 
@@ -730,30 +730,52 @@
     
   </div>
   <br>
+
+  <section class="d-flex flex-column justify-content-center align-items-center vh-20 position-relative" id="contact">
+    <h1 class="h1">let’s work together.!! 🚀</h1>
+    <h2 class="h2">get in touch</h2>
+    <br><br>
+    <small class="position-absolute creator">
+      Made with ❤ by <a href="https://revanthvermareddy.github.io/" target="_blank">Revanth Vermareddy</a>
+    </small>
+  </section>
 </footer>
 <!-- Footer Ends -->
 
 
 <script type="text/javascript">
-  //Get the button
-  var mybutton = document.getElementById("up");
+//Get the button
+var mybutton = document.getElementById("up");
 
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
   }
+}
 
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+const scrollDown = document.querySelector(".scroll-down");
+
+
+window.addEventListener("scroll", scrollHandler);
+
+function scrollHandler() {
+  window.pageYOffset > 0 ?
+  scrollDown.classList.add("is-hidden") :
+  scrollDown.classList.remove("is-hidden");
+}
+
 </script>
+
 </body>
 </html>
